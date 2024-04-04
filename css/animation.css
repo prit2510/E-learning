@@ -1,0 +1,49 @@
+/* gardinat color animation which show efact of sun ligth */
+.css-selector {
+    background: linear-gradient(62deg, #008080, #f3f7f7);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 13s ease ;
+    -moz-animation: AnimationName 13s ease ;
+    animation: AnimationName 13s ease ;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 46%}
+    50%{background-position:100% 55%}
+    100%{background-position:0% 46%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 46%}
+    50%{background-position:100% 55%}
+    100%{background-position:0% 46%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 46%}
+    50%{background-position:100% 55%}
+    100%{background-position:0% 46%}
+}
+/* typing animation withi blinking cursor */
+.typewriter h3{
+    color: rgb(247, 251, 251) ;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(248, 248, 242); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end) infinite,
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    /* to { width: 100% } */
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(28, 28, 27) }
+  }
